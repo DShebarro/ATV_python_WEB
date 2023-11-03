@@ -7,7 +7,7 @@
       <dl>
         <dt>Título:
           <dd><input type="text" size="30" name="titulo">
-        <dt>Texto:
+          <dt>Texto:
           <dd><textarea rows="5" cols="40" name="texto"></textarea>
           <dd><input type="submit" value="Publicar">
       </dl>
@@ -18,9 +18,9 @@
     <ul class="entradas">
        {% for entrada in entradas %}
 
-    <li>
-      <h2>{{ entrada.titulo }}</h2>
-          {{ entrada.texto|safe }}
+      <li>
+        <h2>{{ entrada.titulo }}</h2>
+            {{ entrada.texto|safe }}
      </li>
            {% else %}
 
